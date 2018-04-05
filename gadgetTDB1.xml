@@ -6,9 +6,7 @@
                 author="EL3GOST">
     <Require feature="dynamic-height"/>
   </ModulePrefs>
-  <UserPref name="myname" display_name="Name" default_value="Rowan"/>
-  <UserPref name="myphoto" display_name="Photo" default_value="http://doc.examples.googlepages.com/rowan-headshot.jpg"/>
-  <UserPref name="mychoice" display_name="Show Photo?" datatype="bool" default_value="true"/>
+  <UserPref name="idSite" display_name="Identifiant du site" default_value="modele" />
    <Content type="html"><![CDATA[
    <div id="content_div"></div>
    <script type="text/javascript">
@@ -39,11 +37,6 @@
      // Display a greeting based on the myname userpref
      html += "<br><FONT SIZE=6>Good " + salutation + ", " +
            prefs.getString("myname") + "!!!<br><br></FONT>";
-
-     // If the "Show Photo?" checkbox is checked, display photo.
-     if (prefs.getBool("mychoice") == true) {
-       html += '<img src="' + prefs.getString("myphoto") + '">';
-     }
      element.innerHTML = html;
    }
    // Pass the userprefs for this module instance to the function
