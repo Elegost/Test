@@ -8,13 +8,15 @@
   </ModulePrefs>
   <UserPref name="idSite" display_name="Identifiant du site" default_value="modele" />
    <Content type="html"><![CDATA[
-   var prefs = new gadgets.Prefs();
 	<iframe id="myIframe" src="" height="250px"  width="100%" scrolling="yes" frameborder="0"></iframe>
 
-	function myFunction(){
-		$('#myIframe').attr('src', "myIframeRequest.html?param1=value1&param2=value2"); 
-	} 
+<script>
+   var prefs = new gadgets.Prefs();
 
+	function myFunction(){
+		$('#myIframe').attr('src', "https://script.google.com/a/cci-paris-idf.fr/macros/s/AKfycbzALVIJqvGBWGo6BIyVzVVPoBYQYqPOwASvYgvuIvQOWziBaxgY/exec"); 
+	} 
+</script>
    ]]>
   </Content>
 </Module>
