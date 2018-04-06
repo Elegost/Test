@@ -17,7 +17,7 @@
 		$('#myIframe').attr('src', "https://script.google.com/a/cci-paris-idf.fr/macros/s/AKfycbzALVIJqvGBWGo6BIyVzVVPoBYQYqPOwASvYgvuIvQOWziBaxgY/exec"); 
 	}
     
-    myfunction();
+    myFunction();
 </script>
    ]]>
   </Content>
