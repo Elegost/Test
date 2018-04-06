@@ -9,7 +9,7 @@
   <UserPref name="idSite" display_name="Identifiant du site" default_value="modele" />
    <Content type="html"><![CDATA[
 
-<iframe title="test" src="https://script.google.com/a/cci-paris-idf.fr/macros/s/AKfycbzALVIJqvGBWGo6BIyVzVVPoBYQYqPOwASvYgvuIvQOWziBaxgY/exec" width="400" height="300">
+<iframe title="test" src="https://script.google.com/a/cci-paris-idf.fr/macros/s/AKfycbyTem7vMobYKFqEcMNWpJmXdeinlGJESV-xRsdbP1jG/exec" width="400" height="300">
 </iframe>
   
 
