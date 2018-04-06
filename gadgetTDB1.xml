@@ -8,17 +8,40 @@
   </ModulePrefs>
   <UserPref name="idSite" display_name="Identifiant du site" default_value="modele" />
    <Content type="html"><![CDATA[
-	<iframe id="myIframe" src="https://script.google.com/a/cci-paris-idf.fr/macros/s/AKfycbzALVIJqvGBWGo6BIyVzVVPoBYQYqPOwASvYgvuIvQOWziBaxgY/exec" height="250px"  width="100%" scrolling="yes" frameborder="0"></iframe>
-
-<script>
    var prefs = new gadgets.Prefs();
 
-	/*function myFunction(){
-		$('#myIframe').attr('src', "https://script.google.com/a/cci-paris-idf.fr/macros/s/AKfycbzALVIJqvGBWGo6BIyVzVVPoBYQYqPOwASvYgvuIvQOWziBaxgY/exec"); 
-	}*/
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<div class="textRes" id="main"> </div>
+
+<form id="forme_site">
+  <div class="input"><label>Nom du site * : </label><input type="text" name="site_name" id="site_name" required /></div>
+  
+  <div class="submit"><input type="button" class="create" value="Lancer" onclick="goToSiteNameSet()" />
+  <div id="spinner" style="display: none;"><img src="https://lh3.googleusercontent.com/mhggb7iRqaNHcZLDnqJIZJbaiK5jjdm42uBiSlKPJePzCUxgS8vX=s32-no"  alt="loading..."/></div></div>
+</form>
+<div id="output"></div>
+<div id="error_message" class="error" ></div>
+  
+
+
+ <script>
+    google.load('visualization', '1', {
+      packages: ['corechart', 'bar']
+    });
+    google.setOnLoadCallback(repriseContenu);
+
+    function repriseContenu() {
+      google.script.run.withSuccessHandler(writeRes).repriseContenu();
+    }
+
+    function writeRes(res) {
+      document.getElementById("main").innerHTML += res;
+    }
     
-    //myFunction();
-</script>
+  </script>
+
+
    ]]>
   </Content>
 </Module>
