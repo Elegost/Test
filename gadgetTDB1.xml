@@ -15,13 +15,13 @@
 
 
  <script type="text/javascript">
-   var prefs = new gadgets.Prefs();
+   var prefs = new _IG_Prefs();
    var idSitePref = prefs.getString("idSite");
    var urlGadget = "https://script.google.com/a/cci-paris-idf.fr/macros/s/AKfycbzALVIJqvGBWGo6BIyVzVVPoBYQYqPOwASvYgvuIvQOWziBaxgY/exec";
 
    function affichageGraphique(){
          var elem = document.getElementById('cadre');
-         var srcToUse = urlGadget + "?idSite=" + "GESCIA";
+         var srcToUse = urlGadget + "?idSite=" + idSitePref;
          console.log(srcToUse);
          elem.src = srcToUse;
          
