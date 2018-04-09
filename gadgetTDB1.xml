@@ -21,7 +21,7 @@
 
    function affichageGraphique(){
          var elem = document.getElementById('cadre');
-         var srcToUse = urlGadget + "?idSite = " + idSitePref;
+         var srcToUse = urlGadget + "?idSite=" + "GESCIA";
          console.log(srcToUse);
          elem.src = srcToUse;
          
