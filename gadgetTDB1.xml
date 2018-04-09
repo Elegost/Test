@@ -9,7 +9,7 @@
   <UserPref name="idSite" display_name="Identifiant du site" default_value="modele" />
    <Content type="html"><![CDATA[
 
-<iframe id="cadre" title="test" src="https://script.google.com/a/cci-paris-idf.fr/macros/s/AKfycbzALVIJqvGBWGo6BIyVzVVPoBYQYqPOwASvYgvuIvQOWziBaxgY/exec?idSite=modele"  >
+<iframe id="cadre" title="test" >
 </iframe>
   
 
@@ -21,10 +21,13 @@
 
    function affichageGraphique(){
          var elem = document.getElementById('cadre');
-         elem.src = urlGadget + "?idSite = " + idSitePref;
+         var srcToUse = urlGadget + "?idSite = " + idSitePref;
+         console.log(srcToUse);
+         elem.src = srcToUse;
+         
    }
 
-   //gadgets.util.registerOnLoadHandler(affichageGraphique);
+   gadgets.util.registerOnLoadHandler(affichageGraphique);
 
 </script>
 
