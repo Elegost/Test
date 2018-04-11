@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-   <ModulePrefs title="Gadget TDB 1"
+   <ModulePrefs title="Gadget TDB Reprise Contenu"
                 description="Gadget permettant d'afficher des graphiques en fonction d'un fichier Spreadsheet"
                 height="800" width="600" 
                 author="EL3GOST">
