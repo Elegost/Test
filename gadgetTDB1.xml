@@ -8,7 +8,7 @@
   <UserPref name="idSite" display_name="Identifiant du site" default_value="modele" />
    <Content type="html"><![CDATA[
 
-<iframe id="cadre" title="Gadget Reprise contenu" style="width:100%; heigth:100%" >
+<iframe id="cadre" title="Gadget Reprise contenu" style="width:100%; heigth:100%" frameBorder="0" >
 </iframe>
   
 
