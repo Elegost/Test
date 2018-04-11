@@ -2,7 +2,7 @@
 <Module>
    <ModulePrefs title="Gadget TDB Reprise Contenu"
                 description="Gadget permettant d'afficher des graphiques en fonction d'un fichier Spreadsheet"
-                height="800" width="600" 
+                height="700" width="75" 
                 author="EL3GOST">
   </ModulePrefs>
   <UserPref name="idSite" display_name="Identifiant du site" default_value="modele" />
