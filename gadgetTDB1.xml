@@ -4,12 +4,11 @@
                 description="Gadget permettant d'afficher des graphiques en fonction d'un fichier Spreadsheet"
                 height="800" width="600" 
                 author="EL3GOST">
-    <Require feature="dynamic-height"/>
   </ModulePrefs>
   <UserPref name="idSite" display_name="Identifiant du site" default_value="modele" />
    <Content type="html"><![CDATA[
 
-<iframe id="cadre" title="test" >
+<iframe id="cadre" title="Gadget Reprise contenu" >
 </iframe>
   
 
@@ -22,9 +21,7 @@
    function affichageGraphique(){
          var elem = document.getElementById('cadre');
          var srcToUse = urlGadget + "?idSite=" + idSitePref;
-         console.log(srcToUse);
-         elem.src = srcToUse;
-         
+         elem.src = srcToUse;    
    }
 
    gadgets.util.registerOnLoadHandler(affichageGraphique);
