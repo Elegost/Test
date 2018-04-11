@@ -1,1 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+   <ModulePrefs title="Gadget TDB Analytics"
+                description="Gadget permettant d'afficher des graphiques en fonction d'un fichier Spreadsheet"
+                height="800" width="600" 
+                author="EL3GOST">
+  </ModulePrefs>
+  <UserPref name="idSite" display_name="Identifiant du site" default_value="modele" />
+   <Content type="html"><![CDATA[
 
+<iframe id="cadre" title="Gadget TDB Analytics" style="width:100%; heigth:100%" frameBorder="0" >
+</iframe>
+  
+
+
+ <script type="text/javascript">
+   var prefs = new _IG_Prefs();
+   var idSitePref = prefs.getString("idSite");
+   var urlGadget = "https://script.google.com/a/cci-paris-idf.fr/macros/s/AKfycbwOz7qwg_do40Cl6pPpZH7sgIehpxn_tAIgA_ozd4C1qH39M2ZW/exec";
+
+   function affichageGraphique(){
+         var elem = document.getElementById('cadre');
+         var srcToUse = urlGadget + "?idSite=" + idSitePref;
+         elem.src = srcToUse;    
+   }
+
+   gadgets.util.registerOnLoadHandler(affichageGraphique);
+
+</script>
+
+   ]]>
+  </Content>
+</Module>
