@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
    <ModulePrefs title="Gadget TDB Reprise Contenu"
-                description="Gadget permettant d'afficher des graphiques en fonction d'un fichier Spreadsheet"
-                height="75" width="700" 
+                description="Gadget permettant d'afficher des graphiques en fonction d'un fichier Spreadsheet" width="700" 
                 author="EL3GOST">
        <Require feature="dynamic-height"/>
   </ModulePrefs>
@@ -20,11 +19,11 @@
    function affichageGraphique(){
          var elem = document.getElementById('cadre');
          var srcToUse = urlGadget + "?idSite=" + idSitePref;
-         elem.src = srcToUse;    
+         elem.src = srcToUse;
+         gadgets.window.adjustHeight();
    }
 
    gadgets.util.registerOnLoadHandler(affichageGraphique);
-  gadgets.window.adjustHeight();
 </script>
 
    ]]>
