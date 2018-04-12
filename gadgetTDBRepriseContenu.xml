@@ -72,7 +72,7 @@
    }
 
    gadgets.util.registerOnLoadHandler(affichageGraphique);
-   gadgets.window.adjustHeight();
+  // gadgets.window.adjustHeight();
 
 var acc = document.getElementsByClassName("accordion");
     var i;
