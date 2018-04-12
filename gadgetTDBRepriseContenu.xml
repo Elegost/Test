@@ -8,8 +8,10 @@
   </ModulePrefs>
   <UserPref name="idSite" display_name="Identifiant du site" default_value="modele" />
    <Content type="html"><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
 
-<style>
 .accordion {
     background-color: #eee;
     color: #444;
@@ -47,6 +49,8 @@
     transition: max-height 0.2s ease-out;
 }
 </style>
+</head>
+<body>
 
 <button class="accordion">Reprise de contenu</button>
 <div class="panel">
@@ -88,7 +92,8 @@ var acc = document.getElementsByClassName("accordion");
     }
 
 </script>
-
+</body>
+</html>
    ]]>
   </Content>
 </Module>
