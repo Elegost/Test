@@ -20,10 +20,10 @@
          var elem = document.getElementById('cadre');
          var srcToUse = urlGadget + "?idSite=" + idSitePref;
          elem.src = srcToUse;
-         gadgets.window.adjustHeight();
    }
 
    gadgets.util.registerOnLoadHandler(affichageGraphique);
+   gadgets.util.registerOnLoadHandler(gadgets.window.adjustHeight());
 </script>
 
    ]]>
