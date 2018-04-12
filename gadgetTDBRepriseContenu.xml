@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<style>
 .accordion {
     background-color: #eee;
     color: #444;
