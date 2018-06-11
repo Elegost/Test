@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-   <ModulePrefs title="Gadget TDB Reprise Contenu"
+   <ModulePrefs title="Gadget TDB Qualite du code"
                 description="Gadget permettant d'afficher des graphiques en fonction d'un fichier Spreadsheet"
                 width="750" 
                 author="EL3GOST">
@@ -8,13 +8,13 @@
   </ModulePrefs>
   <UserPref name="idSite" display_name="Identifiant du site" default_value="modele" />
    <Content type="html"><![CDATA[
-<iframe id="cadre" title="Gadget Reprise contenu" style="width:100%; height:100%" frameBorder="0" >
+<iframe id="cadre" title="Gadget QualiCode" style="width:100%; height:100%" frameBorder="0" >
 </iframe>
   
  <script type="text/javascript">
    var prefs = new _IG_Prefs();
    var idSitePref = prefs.getString("idSite");
-   var urlGadget = "https://script.google.com/a/cci-paris-idf.fr/macros/s/AKfycbwRziW8XxF50p9tYr-5l0xLuLKbhUucHN_4-8QooXoGUmghB48a/exec";
+   var urlGadget = "https://script.google.com/a/cci-paris-idf.fr/macros/s/AKfycby5d3b96JpE_sJ6tNVuaTkhwgoChBaM_LEhg1TW/exec";
    function affichageGraphique(){
          var elem = document.getElementById('cadre');
          var srcToUse = urlGadget + "?idSite=" + idSitePref;
