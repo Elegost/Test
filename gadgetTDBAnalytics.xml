@@ -49,6 +49,12 @@
     dest.appendChild(iframe);
   }
 
+window.onresize = adjust;
+ function adjust() {
+   gadgets.window.adjustHeight();
+}
+    gadgets.util.registerOnLoadHandler(adjust);
+
 </script>
 
    ]]>
