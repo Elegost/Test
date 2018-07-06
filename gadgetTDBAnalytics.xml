@@ -35,7 +35,8 @@
         var height = viewport.height;
       }
     }
-
+   console.log("LOL " + width);
+   console.log("LIL " + height);
     var iframe = document.createElement('iframe');
     iframe.setAttribute('width', width + 'px');
     iframe.setAttribute('height', height + 'px');
