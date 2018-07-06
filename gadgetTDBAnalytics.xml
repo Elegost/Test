@@ -23,14 +23,18 @@
          var elem = document.getElementById('cadre');
          var srcToUse = urlGadget + "?idSite=" + idSitePref;
          elem.src = srcToUse;
-   }
-
-   function toto(){
-       gadgets.window.adjustHeight();
+         adjustHeight();
    }
 
    gadgets.util.registerOnLoadHandler(affichageGraphique);
-gadgets.util.registerOnLoadHandler(toto);
+
+gadgets.window.adjustHeight(); 
+ function adjustHeight() { 
+   gadgets.window.adjustHeight();
+   window.setTimeout(function () { gadgets.window.adjustHeight(); }, 500); 
+   for (var i = 1; i < 10; i++) {
+      window.setTimeout(function () { gadgets.window.adjustHeight(); }, i*1000); } 
+}
 
 </script>
 
