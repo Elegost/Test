@@ -23,10 +23,14 @@
          var elem = document.getElementById('cadre');
          var srcToUse = urlGadget + "?idSite=" + idSitePref;
          elem.src = srcToUse;
-         gadgets.window.adjustHeight();
+   }
+
+   function toto(){
+       gadgets.window.adjustHeight();
    }
 
    gadgets.util.registerOnLoadHandler(affichageGraphique);
+gadgets.util.registerOnLoadHandler(toto);
 
 </script>
 
