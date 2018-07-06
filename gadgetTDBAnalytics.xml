@@ -22,11 +22,11 @@
    function affichageGraphique(){
          var elem = document.getElementById('cadre');
          var srcToUse = urlGadget + "?idSite=" + idSitePref;
-         elem.src = srcToUse;    
+         elem.src = srcToUse;
+         gadgets.window.adjustHeight();
    }
 
    gadgets.util.registerOnLoadHandler(affichageGraphique);
-   gadgets.util.registerOnLoadHandler(_IG_AdjustIFrameHeight());   
 
 </script>
 
