@@ -7,7 +7,7 @@
           <Require feature="dynamic-height"/>
   </ModulePrefs>
   <UserPref name="idSite" display_name="Identifiant du site" default_value="modele" />
-   <Content type="html"><![CDATA[
+   <Content type="html" view="default, canvas"><![CDATA[
 
   <div id='dest'><img src="http://www.google.com/ig/images/spinner.gif"></div>
 
