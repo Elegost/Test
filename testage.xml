@@ -1,4 +1,4 @@
-<?xml version="1.3000" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <Module>
    <ModulePrefs title="Gadget Testage"
                 description="Gadget permettant d'afficher des graphiques en fonction d'un fichier Spreadsheet"
