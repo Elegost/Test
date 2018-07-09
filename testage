@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+   <ModulePrefs title="Gadget Testage"
+                description="Gadget permettant d'afficher des graphiques en fonction d'un fichier Spreadsheet"
+                width="750" 
+                author="EL3GOST">
+          <Require feature="dynamic-height"/>
+  </ModulePrefs>
+  <UserPref name="idSite" display_name="Identifiant du site" default_value="modele" />
+   <Content type="html" view="default, canvas"><![CDATA[
+
+  <div id='dest'><img src="https://desejosdebeleza.com/wp-content/uploads/2015/02/esquilo-assustado.gif"></div>
+
+
+ <script type="text/javascript">
+   var prefs = new _IG_Prefs();
+   var idSitePref = prefs.getString("idSite");
+   var urlGadget = "https://script.google.com/a/cci-paris-idf.fr/macros/s/AKfycbwOz7qwg_do40Cl6pPpZH7sgIehpxn_tAIgA_ozd4C1qH39M2ZW/exec";
+
+ gadgets.util.registerOnLoadHandler(doRender);
+
+  function doRender(){
+   gadgets.window.adjustHeight(); }
+  }
+
+window.onresize = adjust;
+ function adjust() {
+   gadgets.window.adjustHeight();
+}
+    gadgets.util.registerOnLoadHandler(adjust);
+
+</script>
+
+   ]]>
+  </Content>
+</Module>
