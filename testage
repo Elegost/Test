@@ -10,28 +10,15 @@
    <Content type="html" view="default, canvas"><![CDATA[
 
   <div id='dest'><img src="https://desejosdebeleza.com/wp-content/uploads/2015/02/esquilo-assustado.gif"></div>
-
+console.log('azeazeazeazeaztazdagazd');
 
  <script type="text/javascript">
-   var prefs = new _IG_Prefs();
-   var idSitePref = prefs.getString("idSite");
-   var urlGadget = "https://script.google.com/a/cci-paris-idf.fr/macros/s/AKfycbwOz7qwg_do40Cl6pPpZH7sgIehpxn_tAIgA_ozd4C1qH39M2ZW/exec";
-
- gadgets.util.registerOnLoadHandler(doRender);
-
-  function doRender(){
-   gadgets.window.adjustHeight(); }
-  }
-
-window.onresize = adjust;
  function adjust() {
+   console.log('azeaze');
    gadgets.window.adjustHeight();
+   console.log("Tazeaz");
 }
     gadgets.util.registerOnLoadHandler(adjust);
-window.onload = function () { 
-   alert("It's loaded!") ;
-   gadgets.window.adjustHeight();
-}
 
 </script>
 
