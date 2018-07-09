@@ -37,7 +37,7 @@
 
  gadgets.util.registerOnLoadHandler(affichage);
 
-//setInterval(function(){alert("Hello")},1000);
+setInterval(function(){ gadgets.window.adjustHeight() },1000);
 
 </script>
 
