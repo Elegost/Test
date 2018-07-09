@@ -9,52 +9,29 @@
   <UserPref name="idSite" display_name="Identifiant du site" default_value="modele" />
    <Content type="html" view="default, canvas"><![CDATA[
 
-  <div id='dest'><img src="http://www.google.com/ig/images/spinner.gif"></div>
-
+<iframe id="Iframe_Analytics"
+   title="Analytics"
+   width="750"
+   height="900"
+    src="/">
+</iframe>
 
  <script type="text/javascript">
    var prefs = new _IG_Prefs();
    var idSitePref = prefs.getString("idSite");
    var urlGadget = "https://script.google.com/a/cci-paris-idf.fr/macros/s/AKfycbwOz7qwg_do40Cl6pPpZH7sgIehpxn_tAIgA_ozd4C1qH39M2ZW/exec";
 
- gadgets.util.registerOnLoadHandler(doRender);
-
-  function doRender(){
+  function affichage(){
     // setup variables
     var prefs = new gadgets.Prefs();
     var iframeURL = urlGadget + "?idSite=" + idSitePref;
-    var height = 800;
-    var width = 600;
-
-    if (gadgets.window) {
-      var viewport = gadgets.window.getViewportDimensions();
-      if (viewport.width) {
-        var width = viewport.width;
-      }
-      if (viewport.height) {
-        var height = viewport.height;
-      }
-    }
-   console.log("LOL " + width);
-   console.log("LIL " + height);
-    var iframe = document.createElement('iframe');
-    iframe.setAttribute('width', width + 'px');
-    iframe.setAttribute('height', height + 'px');
-    iframe.setAttribute('frameborder','no');
-    iframe.setAttribute('src', iframeURL);
 
     // set the slideshow to the placeholder div
-    var dest = document.getElementById('dest');
-    dest.innerHTML = '';
-    dest.appendChild(iframe);
+    var iframe = document.getElementById('Iframe_Analytics');
+    iframe.src = iframeURL;
   }
 
-window.onresize = adjust;
- function adjust() {
-   gadgets.window.adjustHeight(500);
-}
-    gadgets.util.registerOnLoadHandler(adjust);
-
+ gadgets.util.registerOnLoadHandler(affichage);
 </script>
 
    ]]>
