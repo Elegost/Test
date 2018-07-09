@@ -11,8 +11,6 @@
 
 <iframe id="Iframe_Analytics"
    title="Analytics"
-   width="750"
-   height="900"
    src="/"
    frameBorder="0">
 </iframe>
