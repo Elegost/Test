@@ -11,7 +11,8 @@
 
 <iframe id="inlineFrameExample"
     title="Inline Frame Example"
-
+   width="705";
+   height="591"
     src="https://blog.devidia.net/wp-content/uploads/2017/11/safe_image.gif">
 </iframe>
 
