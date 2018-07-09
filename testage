@@ -28,6 +28,10 @@ window.onresize = adjust;
    gadgets.window.adjustHeight();
 }
     gadgets.util.registerOnLoadHandler(adjust);
+window.onload = function () { 
+   alert("It's loaded!") ;
+   gadgets.window.adjustHeight();
+}
 
 </script>
 
