@@ -28,9 +28,15 @@
     // set the slideshow to the placeholder div
     var iframe = document.getElementById('Iframe_Analytics');
     iframe.src = iframeURL;
+
+   gadgets.window.adjustHeight();
+
   }
 
  gadgets.util.registerOnLoadHandler(affichage);
+
+//setInterval(function(){alert("Hello")},1000);
+
 </script>
 
    ]]>
