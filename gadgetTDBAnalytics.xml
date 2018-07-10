@@ -39,7 +39,7 @@
 
 setInterval(function(){ 
 gadgets.window.adjustHeight();
-},1000);
+},5000);
 
 </script>
 
