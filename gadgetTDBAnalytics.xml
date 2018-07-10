@@ -24,6 +24,7 @@
    var urlGadget = "https://script.google.com/a/cci-paris-idf.fr/macros/s/AKfycbwOz7qwg_do40Cl6pPpZH7sgIehpxn_tAIgA_ozd4C1qH39M2ZW/exec";
 
   function affichage(){
+   console.log("preparation affichage Analytics");
     // setup variables
     var prefs = new gadgets.Prefs();
     var iframeURL = urlGadget + "?idSite=" + idSitePref;
@@ -32,7 +33,7 @@
     var iframe = document.getElementById('Iframe_Analytics');
     iframe.src = iframeURL;
 
-   setTimeout(ajustageTaille, 3000);
+   setTimeout(ajustageTaille, 10000);
 
   }
 
