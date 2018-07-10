@@ -14,7 +14,8 @@
    width="750"
    height="900"
    src="/"
-   frameBorder="0">
+   frameBorder="0"
+   onLoad="gadgets.window.adjustHeight();">
 </iframe>
 
  <script type="text/javascript">
