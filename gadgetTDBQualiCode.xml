@@ -3,7 +3,7 @@
    <ModulePrefs title="Gadget TDB Qualite du code"
                 description="Gadget permettant d'afficher des graphiques en fonction d'un fichier Spreadsheet"
                 width="750"
-                height="120"
+                height="510"
                 author="EL3GOST">
           <Require feature="dynamic-height"/>
   </ModulePrefs>
