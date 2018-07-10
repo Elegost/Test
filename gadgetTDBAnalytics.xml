@@ -36,11 +36,20 @@
 
   }
 
+setTimeout(gadgets.window.adjustHeight(), 3000);
+
  gadgets.util.registerOnLoadHandler(affichage);
 
-//setInterval(function(){ 
-//gadgets.window.adjustHeight();
-//},5000);
+/*new MutationObserver(function(mutations) {
+  mutations.some(function(mutation) {
+    if (mutation.type === 'attributes' && mutation.attributeName === 'src') {
+      console.log(mutation);
+      console.log('Old src: ', mutation.oldValue);
+      console.log('New src: ', mutation.target.src);
+
+      return true;
+    }*/
+
 
 </script>
 
