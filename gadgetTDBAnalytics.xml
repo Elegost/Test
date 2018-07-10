@@ -39,7 +39,6 @@
 
 setInterval(function(){ 
 gadgets.window.adjustHeight();
-alert("Hello");
 },1000);
 
 </script>
