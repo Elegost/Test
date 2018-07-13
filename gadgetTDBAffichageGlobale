@@ -17,7 +17,7 @@
  <script type="text/javascript">
    var prefs = new _IG_Prefs();
    var idSitePref = prefs.getString("idSite");
-   var urlGadget = "https://script.google.com/a/cci-paris-idf.fr/macros/s/AKfycbwOz7qwg_do40Cl6pPpZH7sgIehpxn_tAIgA_ozd4C1qH39M2ZW/exec";
+   var urlGadget = "https://script.google.com/a/cci-paris-idf.fr/macros/s/AKfycbxKHH945FJIOInRILdoXJmmMRG77dt00WrBp_Iqfw/exec";
   function affichage(){
    console.log("preparation affichage Analytics");
     // setup variables
