@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+   <ModulePrefs title="Gadget TDB Analytics"
+                description="Gadget permettant d'afficher des graphiques en fonction d'un fichier Spreadsheet"
+                width="750" 
+                author="EL3GOST">
+          <Require feature="dynamic-height"/>
+  </ModulePrefs>
+  <UserPref name="idSite" display_name="Identifiant du site" default_value="modele" />
+   <Content type="html" view="default, canvas"><![CDATA[
+<iframe id="Iframe_Analytics"
+   title="Analytics"
+   width="750"
+   height="510"
+   frameBorder="0">
+</iframe>
+ <script type="text/javascript">
+   var prefs = new _IG_Prefs();
+   var idSitePref = prefs.getString("idSite");
+   var urlGadget = "https://script.google.com/a/cci-paris-idf.fr/macros/s/AKfycbwOz7qwg_do40Cl6pPpZH7sgIehpxn_tAIgA_ozd4C1qH39M2ZW/exec";
+  function affichage(){
+   console.log("preparation affichage Analytics");
+    // setup variables
+    var prefs = new gadgets.Prefs();
+    var iframeURL = urlGadget + "?idSite=" + idSitePref;
+    // set the slideshow to the placeholder div
+    var iframe = document.getElementById('Iframe_Analytics');
+    iframe.src = iframeURL;
+   setTimeout(ajustageTaille, 10000);
+  }
+function ajustageTaille(){
+   gadgets.window.adjustHeight();
+   console.log("Ajustage hauteur gadget Analytics");
+}
+ gadgets.util.registerOnLoadHandler(affichage);
+/*new MutationObserver(function(mutations) {
+  mutations.some(function(mutation) {
+    if (mutation.type === 'attributes' && mutation.attributeName === 'src') {
+      console.log(mutation);
+      console.log('Old src: ', mutation.oldValue);
+      console.log('New src: ', mutation.target.src);
+      return true;
+    }*/
+</script>
+   ]]>
+  </Content>
+</Module>
