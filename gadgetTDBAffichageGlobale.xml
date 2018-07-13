@@ -10,7 +10,7 @@
    <Content type="html" view="default, canvas"><![CDATA[
 <iframe id="Iframe_Analytics"
    title="Analytics"
-   width="750"
+   width="720"
    height="2000"
    frameBorder="0">
 </iframe>
