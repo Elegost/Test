@@ -26,7 +26,8 @@
     // set the slideshow to the placeholder div
     var iframe = document.getElementById('Iframe_Analytics');
     iframe.src = iframeURL;
-   setTimeout(ajustageTaille, 1000);
+gadgets.window.adjustHeight();
+   //setTimeout(ajustageTaille, 1000);
   }
 function ajustageTaille(){
    gadgets.window.adjustHeight();
