@@ -26,21 +26,12 @@
     // set the slideshow to the placeholder div
     var iframe = document.getElementById('Iframe_Analytics');
     iframe.src = iframeURL;
-   setTimeout(ajustageTaille, 10000);
+   setTimeout(ajustageTaille, 1000);
   }
 function ajustageTaille(){
    gadgets.window.adjustHeight();
    console.log("Ajustage hauteur gadget Analytics");
 }
- gadgets.util.registerOnLoadHandler(affichage);
-/*new MutationObserver(function(mutations) {
-  mutations.some(function(mutation) {
-    if (mutation.type === 'attributes' && mutation.attributeName === 'src') {
-      console.log(mutation);
-      console.log('Old src: ', mutation.oldValue);
-      console.log('New src: ', mutation.target.src);
-      return true;
-    }*/
 </script>
    ]]>
   </Content>
