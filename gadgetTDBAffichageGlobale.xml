@@ -31,8 +31,6 @@
             iframe.src = iframeURL;
             //setTimeout(ajustageTaille, 10000);
          iframe.contentWindow.document.addEventListener('mouseup', ajustageTaille, false);
-         // window.frames[0].document.addEventListener('keyup', yourFunction, false);
-      }
         }
       function ajustageTaille(){
          gadgets.window.adjustHeight();
