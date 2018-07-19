@@ -33,12 +33,18 @@
             iframe.src = iframeURL;
         }
       function ajustageTaille(){
-         gadgets.window.adjustHeight();
          console.log("Ajustage hauteur gadget Analytics");
+         gadgets.window.adjustHeight();
+	      window.setTimeout(function () {
+		      gadgets.window.adjustHeight();
+	      }, 500);
+	      for (var i = 1; i < 10; i++) {
+		      window.setTimeout(function () {
+		      gadgets.window.adjustHeight();
+		   }, i*1000);
       }
        gadgets.util.registerOnLoadHandler(affichage);
-
-     
+       gadgets.util.registerOnLoadHandler(ajustageTaille);
       </script>
    ]]>
    </Content>
