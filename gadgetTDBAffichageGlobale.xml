@@ -9,13 +9,14 @@
   <UserPref name="idSite" display_name="Identifiant du site" default_value="modele" />
   <Content type="html" view="default" preferred_height="270">
      <![CDATA[
-         <iframe id="Iframe_Analytics"
+         <div id="divClick" onmousedown=ajustageTaille()>
+          <iframe id="Iframe_Analytics"
             title="Analytics"
             width="720"
             height="2000"
-            frameBorder="0"
-            onmousedown="ajustageTaille()">
-         </iframe>
+            frameBorder="0">
+          </iframe>
+         </div>
 
       <script type="text/javascript">
          var prefs = new _IG_Prefs();
