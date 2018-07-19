@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-   <ModulePrefs title="Gadget TDB Analytics"
+   <ModulePrefs title="Gadget TDB Affichage global"
                 description="Gadget permettant d'afficher des graphiques en fonction d'un fichier Spreadsheet"
                 width="750" 
                 author="EL3GOST">
