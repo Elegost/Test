@@ -31,7 +31,7 @@
             var iframe = document.getElementById('Iframe_Analytics');
             iframe.src = iframeURL;
 
-            $('#Iframe_Analytics').contents().find('body').bind('mousedown', ajustageTaille();
+            $('#Iframe_Analytics').contents().find('body').bind('mousedown', ajustageTaille());
         }
       function ajustageTaille(){
          gadgets.window.adjustHeight();
