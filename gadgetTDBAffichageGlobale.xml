@@ -9,7 +9,7 @@
   <UserPref name="idSite" display_name="Identifiant du site" default_value="modele" />
   <Content type="html" view="default" preferred_height="270">
      <![CDATA[
-         <div id="divClick" onmousedown=ajustageTaille()>
+         <div id="divClick" onmousedown="javascript:alert('event has been triggered');">
           <iframe id="Iframe_Analytics"
             title="Analytics"
             width="720"
