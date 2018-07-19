@@ -13,7 +13,8 @@
             title="Analytics"
             width="720"
             height="2000"
-            frameBorder="0">
+            frameBorder="0"
+            onmousedown="ajustageTaille()">
          </iframe>
 
       <script type="text/javascript">
@@ -29,8 +30,6 @@
             // set the slideshow to the placeholder div
             var iframe = document.getElementById('Iframe_Analytics');
             iframe.src = iframeURL;
-            //setTimeout(ajustageTaille, 10000);
-         iframe.contentWindow.document.addEventListener('mouseup', ajustageTaille, false);
         }
       function ajustageTaille(){
          gadgets.window.adjustHeight();
