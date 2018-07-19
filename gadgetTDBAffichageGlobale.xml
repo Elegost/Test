@@ -9,7 +9,7 @@
   <UserPref name="idSite" display_name="Identifiant du site" default_value="modele" />
   <Content type="html" view="default" preferred_height="270">
      <![CDATA[
-<INPUT TYPE="button" NAME="button2" Value="Clear" onClick="alert('test');"/>
+<INPUT TYPE="button" NAME="button2" Value="Clear" onClick="gadgets.window.adjustHeight();;alert('test');gadgets.window.adjustHeight();"/>
           <iframe id="Iframe_Analytics"
             title="Analytics"
             width="720"
